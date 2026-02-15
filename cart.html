@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Your Cart — Garmin</title>
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/navigation.css" />
+    <link rel="stylesheet" href="./styles/pages.css" />
+    <script src="./scripts/overlays.js" defer></script>
+    <script src="./scripts/cart-logic.js" defer></script>
+  </head>
+  <body>
+    <div id="nav-root"></div>
+
+    <main class="container" style="padding:48px 0;">
+      <h1 style="margin-bottom:18px">Shopping Cart</h1>
+
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:24px">
+        <div style="background:#fff;padding:16px;border-radius:8px;">
+          <table style="width:100%;border-collapse:collapse">
+            <thead>
+              <tr style="text-align:left;border-bottom:1px solid #eee">
+                <th>Product</th>
+                <th style="text-align:center">Price</th>
+                <th style="text-align:center">Quantity</th>
+                <th style="text-align:center">Total</th>
+                <th style="text-align:center">Action</th>
+              </tr>
+            </thead>
+            <tbody id="cartTableBody"></tbody>
+          </table>
+        </div>
+
+        <aside style="position:relative;">
+          <div style="background:#fff;padding:18px;border-radius:8px;">
+            <h3>Order Summary</h3>
+            <div style="display:flex;justify-content:space-between;margin-top:12px"> <span>Sub Total</span> <strong id="subtotal">$0.00</strong></div>
+            <div style="display:flex;justify-content:space-between;margin-top:8px"> <span>Discount</span> <strong id="discount">$0.00</strong></div>
+            <div style="display:flex;justify-content:space-between;margin-top:8px"> <span>Delivery Fee</span> <strong id="delivery">$50.00</strong></div>
+            <div style="display:flex;justify-content:space-between;margin-top:12px;font-size:18px"> <span>Grand Total</span> <strong id="grandTotal">$0.00</strong></div>
+
+            <div style="margin-top:14px;display:flex;gap:8px">
+              <input id="couponCode" placeholder="Enter coupon code" style="flex:1;padding:8px;border:1px solid #e6e6e6;border-radius:6px" />
+              <button id="applyCoupon" class="btn btn-primary">Apply</button>
+            </div>
+
+            <button id="checkoutNowPage" class="btn" style="margin-top:18px;background:#081017;color:#fff;padding:14px;border-radius:10px;width:100%">Checkout Now</button>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <div id="footer-root"></div>
+
+    <script>
+      // wire checkout button to a placeholder
+      document.addEventListener('DOMContentLoaded', function(){
+        document.getElementById('checkoutNowPage').addEventListener('click', function(){ alert('Proceeding to checkout (placeholder)'); });
+      });
+    </script>
+  </body>
+</html>

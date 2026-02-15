@@ -50,216 +50,81 @@
   </head>
   <body>
     <!-- ============================================
-       NAVIGATION - GLASSMORPHISM
+       AVIATION-GRADE GLASS NAVIGATION
        ============================================ -->
     <!-- Skip to Main Content (Accessibility) -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <nav class="nav" id="navbar" role="navigation" aria-label="Main navigation">
+    <nav
+      class="glass-nav"
+      id="navbar"
+      role="navigation"
+      aria-label="Main navigation"
+    >
       <div class="nav-container">
         <!-- Logo -->
-        <div class="nav-logo">
-          <a href="/">GARMIN</a>
-        </div>
+        <a href="./index.html" class="brand-logo">GARMIN</a>
 
-        <!-- Desktop Navigation Menu -->
-        <ul class="nav-menu" role="menubar">
-          <!-- Products - Mega Menu -->
-          <li class="nav-item has-mega-menu" role="none">
-            <a
-              href="#products"
-              role="menuitem"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Products</a
-            >
-
-            <!-- Products Mega Menu -->
-            <div class="mega-menu" role="dialog" aria-label="Products menu">
-              <!-- Column 1: By Activity -->
-              <div class="mega-menu-column">
-                <h3>By Activity</h3>
-                <div class="activity-cards">
-                  <a href="/train" class="activity-card">
-                    <div class="activity-card-icon">🏃</div>
-                    <div class="activity-card-content">
-                      <div class="activity-card-title">Train</div>
-                      <div class="activity-card-desc">
-                        For runners, cyclists & triathletes
-                      </div>
-                      <span class="activity-card-link">→ View Watches</span>
-                    </div>
-                  </a>
-
-                  <a href="/explore" class="activity-card">
-                    <div class="activity-card-icon">⛰️</div>
-                    <div class="activity-card-content">
-                      <div class="activity-card-title">Explore</div>
-                      <div class="activity-card-desc">
-                        For hiking, trekking & outdoor adventure
-                      </div>
-                      <span class="activity-card-link">→ View Watches</span>
-                    </div>
-                  </a>
-
-                  <a href="/navigate" class="activity-card">
-                    <div class="activity-card-icon">🧭</div>
-                    <div class="activity-card-content">
-                      <div class="activity-card-title">Navigate</div>
-                      <div class="activity-card-desc">
-                        Aviation, Marine & Automotive
-                      </div>
-                      <span class="activity-card-link">→ View Products</span>
-                    </div>
-                  </a>
-
-                  <a href="/wellness" class="activity-card">
-                    <div class="activity-card-icon">❤️</div>
-                    <div class="activity-card-content">
-                      <div class="activity-card-title">Live Well</div>
-                      <div class="activity-card-desc">
-                        Health, lifestyle & wellness
-                      </div>
-                      <span class="activity-card-link">→ View Watches</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <!-- Column 2: By Product -->
-              <div class="mega-menu-column">
-                <h3>By Product</h3>
-                <div class="product-links">
-                  <a href="/smartwatches">Smartwatches</a>
-                  <a href="/fitness-watches">Fitness Watches</a>
-                  <a href="/running-watches">GPS Running Watches</a>
-                  <a href="/cycling">Cycling Computers</a>
-                  <a href="/golf">Golf Devices</a>
-                  <a href="/marine">Marine</a>
-                  <a href="/aviation">Aviation</a>
-                  <a href="/automotive">Automotive</a>
-                  <a href="/accessories">Accessories</a>
-                </div>
-              </div>
-
-              <!-- Column 3: Featured Products -->
-              <div class="mega-menu-column">
-                <h3>Featured</h3>
-                <div class="featured-products">
-                  <a href="/products/fenix-8" class="featured-product">
-                    <img
-                      src="./assets/images/products/fenix-8.png"
-                      alt="Fēnix 8"
-                      class="featured-product-image"
-                    />
-                    <div class="featured-product-name">Fēnix 8</div>
-                    <span class="featured-product-badge">NEW</span>
-                  </a>
-
-                  <a href="/products/forerunner-965" class="featured-product">
-                    <img
-                      src="./assets/images/products/forerunner-965.png"
-                      alt="Forerunner 965"
-                      class="featured-product-image"
-                    />
-                    <div class="featured-product-name">Forerunner 965</div>
-                    <span class="featured-product-badge">POPULAR</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+        <!-- Desktop Navigation Menu (Trigger Layer Only) -->
+        <ul class="nav-links">
+          <li class="nav-item" data-category="wearables">
+            <a href="#wearables">Wearables</a>
           </li>
-
-          <!-- Technology - Simple Dropdown -->
-          <li class="nav-item has-dropdown" role="none">
-            <a
-              href="#technology"
-              role="menuitem"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Technology</a
-            >
-
-            <!-- Technology Dropdown -->
-            <div
-              class="simple-dropdown"
-              role="menu"
-              aria-label="Technology menu"
-            >
-              <a href="/technology/gps" role="menuitem">GPS & Accuracy</a>
-              <a href="/technology/health" role="menuitem">Health Metrics</a>
-              <a href="/technology/battery" role="menuitem"
-                >Battery Innovation</a
-              >
-              <a href="/technology/ecosystem" role="menuitem"
-                >Garmin Ecosystem</a
-              >
-            </div>
+          <li class="nav-item" data-category="sports">
+            <a href="#sports">Sports</a>
           </li>
-
-          <!-- Support - Simple Dropdown -->
-          <li class="nav-item has-dropdown" role="none">
-            <a
-              href="#support"
-              role="menuitem"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Support</a
-            >
-
-            <!-- Support Dropdown -->
-            <div class="simple-dropdown" role="menu" aria-label="Support menu">
-              <a href="/support/centers" role="menuitem"
-                >Service Centers (India)</a
-              >
-              <a href="/support/warranty" role="menuitem"
-                >Warranty Information</a
-              >
-              <a href="/support/updates" role="menuitem">Software Updates</a>
-              <a href="/support/contact" role="menuitem">Contact Support</a>
-              <a href="/support/manuals" role="menuitem">Product Manuals</a>
-              <a href="/support/forum" role="menuitem">Community Forum</a>
-            </div>
+          <li class="nav-item" data-category="outdoor">
+            <a href="#outdoor">Outdoor</a>
           </li>
-
-          <!-- About -->
-          <li class="nav-item" role="none">
-            <a href="/about" role="menuitem">About</a>
+          <li class="nav-item" data-category="automotive">
+            <a href="#automotive">Automotive</a>
+          </li>
+          <li class="nav-item" data-category="marine">
+            <a href="#marine">Marine</a>
+          </li>
+          <li class="nav-item" data-category="aviation">
+            <a href="#aviation">Aviation</a>
           </li>
         </ul>
 
-        <!-- Right-Side Actions: Icons -->
-        <div class="nav-actions">
-          <button class="nav-icon search-icon" aria-label="Search">
+        <!-- Right-Side: Cowboy-Style Icons -->
+        <div class="nav-icons">
+          <!-- Search Icon -->
+          <button class="icon-btn search-btn" aria-label="Search">
             <svg
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
               <circle cx="11" cy="11" r="8"></circle>
-              <path d="m21 21-4.35-4.35"></path>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
           </button>
 
-          <a href="/account" class="nav-icon account-icon" aria-label="Account">
+          <!-- Profile Icon -->
+          <button id="profile-icon" class="icon-btn profile-btn" aria-label="Account">
             <svg
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
               <circle cx="12" cy="7" r="4"></circle>
             </svg>
-          </a>
+          </button>
 
-          <a href="/cart" class="nav-icon cart-icon" aria-label="Cart">
+          <!-- Cart Icon -->
+          <button class="icon-btn cart-btn" aria-label="Cart">
             <svg
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
               <circle cx="9" cy="21" r="1"></circle>
               <circle cx="20" cy="21" r="1"></circle>
@@ -268,12 +133,12 @@
               ></path>
             </svg>
             <span class="cart-count">0</span>
-          </a>
+          </button>
 
           <!-- Mobile Menu Toggle -->
           <button
-            class="mobile-menu-toggle"
-            id="mobileMenuToggle"
+            class="mobile-toggle"
+            id="mobileToggle"
             aria-label="Toggle mobile menu"
             aria-expanded="false"
           >
@@ -285,60 +150,514 @@
       </div>
     </nav>
 
+    <!-- ============================================
+       MEGA OVERLAY (Detached Fixed Panel)
+       Positioned relative to viewport, NOT navbar.
+       Nav triggers visibility. It does not control geometry.
+       ============================================ -->
+    <div
+      class="mega-overlay"
+      id="megaOverlay"
+      role="dialog"
+      aria-label="Navigation menu"
+    >
+      <div class="mega-container">
+        <!-- ========== WEARABLES PANEL ========== -->
+        <div class="mega-panel" id="panel-wearables">
+          <div class="mega-grid">
+            <!-- Column 1: Performance -->
+            <div class="menu-column">
+              <h4>Performance</h4>
+              <a href="./products/marq.html" class="menu-link">MARQ Collection</a>
+              <a href="./products/fenix-8.html" class="menu-link">Fēnix 8</a>
+              <a href="./products/epix.html" class="menu-link">Epix Pro</a>
+              <a href="./products/enduro.html" class="menu-link">Enduro 3</a>
+              <a href="./products/instinct.html" class="menu-link">Instinct 2X</a>
+            </div>
+
+            <!-- Column 2: Running & Fitness -->
+            <div class="menu-column">
+              <h4>Running & Fitness</h4>
+              <a href="./products/forerunner-965.html" class="menu-link"
+                >Forerunner 965</a
+              >
+              <a href="./products/forerunner-265.html" class="menu-link"
+                >Forerunner 265</a
+              >
+              <a href="./products/forerunner-165.html" class="menu-link"
+                >Forerunner 165</a
+              >
+              <a href="./products/vivoactive.html" class="menu-link">Vívoactive 5</a>
+              <a href="./products/lily.html" class="menu-link">Lily 2</a>
+            </div>
+
+            <!-- Column 3: Lifestyle -->
+            <div class="menu-column">
+              <h4>Lifestyle</h4>
+              <a href="./products/venu-3.html" class="menu-link">Venu 3</a>
+              <a href="./products/vivomove.html" class="menu-link">Vívomove Trend</a>
+              <a href="./kids.html" class="menu-link">Kids Watches</a>
+              <a href="./accessories.html" class="menu-link">Accessories</a>
+            </div>
+
+            <!-- Column 4: Featured (Fixed Width) -->
+            <div class="menu-featured">
+              <h4>Featured</h4>
+              <a href="./products/fenix-8.html" class="featured-card">
+                <img src="./assets/images/products/fenix-8.png" alt="Fēnix 8" />
+                <span>New Fēnix 8</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Footer Utility Row -->
+          <div class="mega-footer">
+            <a href="./wearables/compare.html">Compare Wearables</a>
+            <a href="./wearables/all.html">Shop All Wearables</a>
+            <a href="./support/wearables.html">Wearables Support</a>
+          </div>
+        </div>
+
+        <!-- ========== SPORTS PANEL ========== -->
+        <div class="mega-panel" id="panel-sports">
+          <div class="mega-grid">
+            <!-- Column 1: Cycling -->
+            <div class="menu-column">
+              <h4>Cycling</h4>
+              <a href="./cycling/edge-1050.html" class="menu-link">Edge 1050</a>
+              <a href="./cycling/edge-540.html" class="menu-link">Edge 540/840</a>
+              <a href="./cycling/rally.html" class="menu-link">Rally Power Meters</a>
+              <a href="./cycling/varia.html" class="menu-link">Varia Radar Lights</a>
+            </div>
+
+            <!-- Column 2: Indoor Training -->
+            <div class="menu-column">
+              <h4>Indoor Training</h4>
+              <a href="./tacx/neo.html" class="menu-link">Tacx NEO 3M</a>
+              <a href="./tacx/flux.html" class="menu-link">Tacx FLUX 2</a>
+              <a href="./tacx/boost.html" class="menu-link">Tacx Boost</a>
+              <a href="./hrm.html" class="menu-link">HRM Sensors</a>
+            </div>
+
+            <!-- Column 3: Golf -->
+            <div class="menu-column">
+              <h4>Golf</h4>
+              <a href="./golf/approach-s70.html" class="menu-link">Approach S70</a>
+              <a href="./golf/approach-z82.html" class="menu-link">Approach Z82</a>
+              <a href="./golf/approach-r10.html" class="menu-link">Approach R10</a>
+            </div>
+
+            <!-- Column 4: Featured -->
+            <div class="menu-featured">
+              <h4>Featured</h4>
+              <a href="./cycling/edge-1050.html" class="featured-card">
+                <img
+                  src="./assets/images/products/edge-1050.png"
+                  alt="Edge 1050"
+                />
+                <span>Edge 1050</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="mega-footer">
+            <a href="./sports/compare.html">Compare Sports Devices</a>
+            <a href="./sports/all.html">Shop All Sports</a>
+            <a href="./support/sports.html">Sports Support</a>
+          </div>
+        </div>
+
+        <!-- ========== OUTDOOR PANEL ========== -->
+        <div class="mega-panel" id="panel-outdoor">
+          <div class="mega-grid">
+            <!-- Column 1: Handhelds -->
+            <div class="menu-column">
+              <h4>Handhelds</h4>
+              <a href="./outdoor/gpsmap-67.html" class="menu-link">GPSMAP 67</a>
+              <a href="./outdoor/montana-700.html" class="menu-link">Montana 700</a>
+              <a href="./outdoor/etrex.html" class="menu-link">eTrex Series</a>
+              <a href="./outdoor/inreach.html" class="menu-link">inReach Satellite</a>
+            </div>
+
+            <!-- Column 2: Dog & Tracking -->
+            <div class="menu-column">
+              <h4>Dog & Tracking</h4>
+              <a href="./dog/astro.html" class="menu-link">Astro Dog Tracker</a>
+              <a href="./dog/alpha.html" class="menu-link">Alpha GPS</a>
+              <a href="./outdoor/explore.html" class="menu-link">Explore Maps</a>
+            </div>
+
+            <!-- Column 3: Cameras -->
+            <div class="menu-column">
+              <h4>Cameras</h4>
+              <a href="./cameras/virb.html" class="menu-link">VIRB Action Cam</a>
+              <a href="./cameras/dashcam.html" class="menu-link">Dash Cams</a>
+            </div>
+
+            <!-- Column 4: Featured -->
+            <div class="menu-featured">
+              <h4>Featured</h4>
+              <a href="./outdoor/inreach.html" class="featured-card">
+                <img
+                  src="./assets/images/products/inreach.png"
+                  alt="inReach Messenger"
+                />
+                <span>inReach Messenger</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="mega-footer">
+            <a href="./outdoor/compare.html">Compare Outdoor Devices</a>
+            <a href="./outdoor/all.html">Shop All Outdoor</a>
+            <a href="./support/outdoor.html">Outdoor Support</a>
+          </div>
+        </div>
+
+        <!-- ========== AUTOMOTIVE PANEL ========== -->
+        <div class="mega-panel" id="panel-automotive">
+          <div class="mega-grid no-featured">
+            <!-- Column 1: Road & Commute -->
+            <div class="menu-column">
+              <h4>Road & Commute</h4>
+              <a href="./automotive/car-gps.html" class="menu-link"
+                >Car GPS Navigation</a
+              >
+              <a href="./automotive/dash-cameras.html" class="menu-link"
+                >Dash Cameras</a
+              >
+              <a href="./automotive/backup-cameras.html" class="menu-link"
+                >Backup Cameras</a
+              >
+              <a href="./automotive/voice-nav.html" class="menu-link"
+                >Voice-Assisted Navigation</a
+              >
+            </div>
+
+            <!-- Column 2: Adventure & Off-Road -->
+            <div class="menu-column">
+              <h4>Adventure & Off-Road</h4>
+              <a href="./automotive/overlanding.html" class="menu-link"
+                >Overlanding Navigation</a
+              >
+              <a href="./automotive/motorcycle.html" class="menu-link"
+                >Motorcycle GPS</a
+              >
+              <a href="./automotive/powersports.html" class="menu-link"
+                >Powersports Navigation</a
+              >
+              <a href="./automotive/group-ride.html" class="menu-link"
+                >Group Ride Tracking</a
+              >
+            </div>
+
+            <!-- Column 3: RV & Commercial -->
+            <div class="menu-column">
+              <h4>RV & Commercial</h4>
+              <a href="./automotive/rv.html" class="menu-link"
+                >RV & Caravan Navigation</a
+              >
+              <a href="./automotive/trucking.html" class="menu-link"
+                >Trucking & Fleet</a
+              >
+              <a href="./automotive/performance.html" class="menu-link"
+                >Driving Performance</a
+              >
+              <a href="./automotive/elogs.html" class="menu-link"
+                >Electronic Logging</a
+              >
+            </div>
+
+            <!-- Column 4: In-Vehicle Technology -->
+            <div class="menu-column">
+              <h4>In-Vehicle Technology</h4>
+              <a href="./automotive/in-dash.html" class="menu-link"
+                >In-Dash Systems</a
+              >
+              <a href="./automotive/oem.html" class="menu-link">OEM Solutions</a>
+              <a href="./automotive/maps.html" class="menu-link">Maps & Updates</a>
+              <a href="./automotive/mounts.html" class="menu-link"
+                >Mounts & Accessories</a
+              >
+            </div>
+          </div>
+
+          <div class="mega-footer">
+            <a href="./automotive/compare.html">Compare Automotive Devices</a>
+            <a href="./dealers.html">Find Authorized Dealers</a>
+            <a href="./support/automotive.html">Service & Support</a>
+          </div>
+        </div>
+
+        <!-- ========== MARINE PANEL ========== -->
+        <div class="mega-panel" id="panel-marine">
+          <div class="mega-grid no-featured">
+            <!-- Column 1: Chartplotters & Displays -->
+            <div class="menu-column">
+              <h4>Chartplotters & Displays</h4>
+              <a href="./marine/gpsmap.html" class="menu-link">GPSMAP Series</a>
+              <a href="./marine/echomap.html" class="menu-link">ECHOMAP Series</a>
+              <a href="./marine/touchscreen.html" class="menu-link"
+                >Touchscreen Displays</a
+              >
+              <a href="./marine/mfd.html" class="menu-link"
+                >Multi-Function Displays</a
+              >
+            </div>
+
+            <!-- Column 2: Sonar & Fishing -->
+            <div class="menu-column">
+              <h4>Sonar & Fishing</h4>
+              <a href="./marine/livevu.html" class="menu-link">Live Sonar Systems</a>
+              <a href="./marine/fishfinders.html" class="menu-link">Fishfinders</a>
+              <a href="./marine/transducers.html" class="menu-link">Transducers</a>
+              <a href="./marine/ice-fishing.html" class="menu-link"
+                >Ice Fishing Devices</a
+              >
+            </div>
+
+            <!-- Column 3: Control & Navigation -->
+            <div class="menu-column">
+              <h4>Control & Navigation</h4>
+              <a href="./marine/autopilot.html" class="menu-link"
+                >Autopilot Systems</a
+              >
+              <a href="./marine/radar.html" class="menu-link">Marine Radar</a>
+              <a href="./marine/sailing.html" class="menu-link"
+                >Sailing Instruments</a
+              >
+              <a href="./marine/switching.html" class="menu-link"
+                >Digital Switching</a
+              >
+            </div>
+
+            <!-- Column 4: Connected Vessel -->
+            <div class="menu-column">
+              <h4>Connected Vessel</h4>
+              <a href="./marine/audio.html" class="menu-link">Marine Audio Systems</a>
+              <a href="./marine/trolling.html" class="menu-link">Trolling Motors</a>
+              <a href="./marine/cameras.html" class="menu-link">Marine Cameras</a>
+              <a href="./marine/wearables.html" class="menu-link"
+                >Boating Wearables</a
+              >
+            </div>
+          </div>
+
+          <div class="mega-footer">
+            <a href="./marine/build.html">Build Your Marine System</a>
+            <a href="./marine/maps.html">Marine Maps & Charts</a>
+            <a href="./support/marine.html">Service & Installation</a>
+          </div>
+        </div>
+
+        <!-- ========== AVIATION PANEL ========== -->
+        <div class="mega-panel" id="panel-aviation">
+          <div class="mega-grid no-featured">
+            <!-- Column 1: Flight Decks & Displays -->
+            <div class="menu-column">
+              <h4>Flight Decks & Displays</h4>
+              <a href="./aviation/flight-decks.html" class="menu-link"
+                >Integrated Flight Decks</a
+              >
+              <a href="./aviation/glass-cockpit.html" class="menu-link"
+                >Glass Cockpit Systems</a
+              >
+              <a href="./aviation/retrofit.html" class="menu-link"
+                >Retrofit Displays</a
+              >
+              <a href="./aviation/efi.html" class="menu-link"
+                >Electronic Flight Instruments</a
+              >
+            </div>
+
+            <!-- Column 2: Navigation & Communication -->
+            <div class="menu-column">
+              <h4>Navigation & Comm</h4>
+              <a href="./aviation/gps-nav.html" class="menu-link"
+                >GPS & NAV/COM Systems</a
+              >
+              <a href="./aviation/autopilots.html" class="menu-link">Autopilots</a>
+              <a href="./aviation/weather.html" class="menu-link"
+                >Weather & Traffic Systems</a
+              >
+              <a href="./aviation/audio-panels.html" class="menu-link"
+                >Audio Panels</a
+              >
+            </div>
+
+            <!-- Column 3: Pilot Devices -->
+            <div class="menu-column">
+              <h4>Pilot Devices</h4>
+              <a href="./aviation/d2.html" class="menu-link">Aviation Smartwatches</a>
+              <a href="./aviation/aera.html" class="menu-link">Portable GPS Units</a>
+              <a href="./aviation/inreach.html" class="menu-link"
+                >Satellite Communicators</a
+              >
+              <a href="./aviation/apps.html" class="menu-link"
+                >Pilot Apps & Tablets</a
+              >
+            </div>
+
+            <!-- Column 4: Services & Training -->
+            <div class="menu-column">
+              <h4>Services & Training</h4>
+              <a href="./aviation/databases.html" class="menu-link"
+                >Database Updates</a
+              >
+              <a href="./aviation/flight-planning.html" class="menu-link"
+                >Flight Planning Tools</a
+              >
+              <a href="./aviation/safety.html" class="menu-link"
+                >Safety & Emergency</a
+              >
+              <a href="./aviation/training.html" class="menu-link">Pilot Training</a>
+            </div>
+          </div>
+
+          <div class="mega-footer">
+            <a href="./aviation/pilots.html">For Pilots</a>
+            <a href="./support/aviation.html">Aviation Support</a>
+            <a href="./aviation/software.html">Software & Database Updates</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Backdrop -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
     <!-- Mobile Menu Panel -->
-    <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
     <div
       class="mobile-menu"
       id="mobileMenu"
       role="navigation"
       aria-label="Mobile navigation"
     >
-      <ul class="mobile-menu-items">
-        <!-- Products -->
-        <li class="mobile-menu-item">
-          <button class="mobile-submenu-toggle" aria-expanded="false">
-            Products
-          </button>
+      <ul class="mobile-nav-links">
+        <!-- Wearables -->
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-toggle">
+            Wearables
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
           <div class="mobile-submenu">
-            <a href="/train">Train</a>
-            <a href="/explore">Explore</a>
-            <a href="/navigate">Navigate</a>
-            <a href="/wellness">Live Well</a>
-            <a href="/smartwatches">Smartwatches</a>
-            <a href="/cycling">Cycling Computers</a>
-            <a href="/golf">Golf Devices</a>
+            <a href="./products/fenix-8.html">Fēnix 8</a>
+            <a href="./products/epix.html">Epix Pro</a>
+            <a href="./products/forerunner-965.html">Forerunner 965</a>
+            <a href="./products/venu-3.html">Venu 3</a>
+            <a href="./products/instinct.html">Instinct 2X</a>
           </div>
         </li>
 
-        <!-- Technology -->
-        <li class="mobile-menu-item">
-          <button class="mobile-submenu-toggle" aria-expanded="false">
-            Technology
-          </button>
+        <!-- Sports -->
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-toggle">
+            Sports
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
           <div class="mobile-submenu">
-            <a href="/technology/gps">GPS & Accuracy</a>
-            <a href="/technology/health">Health Metrics</a>
-            <a href="/technology/battery">Battery Innovation</a>
-            <a href="/technology/ecosystem">Garmin Ecosystem</a>
+            <a href="./cycling/edge-1050.html">Edge 1050</a>
+            <a href="./cycling/rally.html">Rally Power Meters</a>
+            <a href="./tacx/neo.html">Tacx NEO 3M</a>
+            <a href="./golf/approach-s70.html">Approach S70</a>
           </div>
         </li>
 
-        <!-- Support -->
-        <li class="mobile-menu-item">
-          <button class="mobile-submenu-toggle" aria-expanded="false">
-            Support
-          </button>
+        <!-- Outdoor -->
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-toggle">
+            Outdoor
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
           <div class="mobile-submenu">
-            <a href="/support/centers">Service Centers (India)</a>
-            <a href="/support/warranty">Warranty Information</a>
-            <a href="/support/updates">Software Updates</a>
-            <a href="/support/contact">Contact Support</a>
+            <a href="./outdoor/gpsmap-67.html">GPSMAP 67</a>
+            <a href="./outdoor/inreach.html">inReach Satellite</a>
+            <a href="./dog/astro.html">Astro Dog Tracker</a>
           </div>
         </li>
 
-        <!-- About -->
-        <li class="mobile-menu-item">
-          <a href="/about">About</a>
+        <!-- Automotive -->
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-toggle">
+            Automotive
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="mobile-submenu">
+            <a href="./automotive/car-gps.html">Car GPS Navigation</a>
+            <a href="./automotive/dash-cameras.html">Dash Cameras</a>
+            <a href="./automotive/motorcycle.html">Motorcycle GPS</a>
+            <a href="./automotive/rv.html">RV Navigation</a>
+          </div>
+        </li>
+
+        <!-- Marine -->
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-toggle">
+            Marine
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="mobile-submenu">
+            <a href="./marine/gpsmap.html">GPSMAP Series</a>
+            <a href="./marine/fishfinders.html">Fishfinders</a>
+            <a href="./marine/autopilot.html">Autopilot Systems</a>
+            <a href="./marine/radar.html">Marine Radar</a>
+          </div>
+        </li>
+
+        <!-- Aviation -->
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-toggle">
+            Aviation
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="mobile-submenu">
+            <a href="./aviation/flight-decks.html">Flight Decks</a>
+            <a href="./aviation/d2.html">Aviation Smartwatches</a>
+            <a href="./aviation/autopilots.html">Autopilots</a>
+            <a href="./aviation/databases.html">Database Updates</a>
+          </div>
         </li>
       </ul>
     </div>
@@ -385,105 +704,274 @@
       <!-- Scroll Indicator -->
       <div class="scroll-indicator" aria-hidden="true">Scroll</div>
     </section>
+    <!-- ============================================
+       ACT 2: TRANSITION BUFFER
+       Pressure chamber between hero and content
+       ============================================ -->
+    <section class="hero-transition" aria-hidden="true"></section>
 
     <!-- ============================================
-       SECTION 2: USER ROUTING CARDS
+       ACT 3: GARMIN UNIVERSE - WORLD GRID
+       Edge-to-edge category exploration
        ============================================ -->
-    <section class="user-routing section" id="routing">
-      <div class="container">
-        <h2 class="user-routing-title">Find Your Perfect Garmin</h2>
-
-        <div class="routing-cards">
-          <!-- TRAIN Card -->
-          <div class="routing-card scroll-reveal">
-            <svg
-              class="routing-card-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              aria-hidden="true"
-            >
-              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-            </svg>
-            <h3 class="routing-card-title">TRAIN</h3>
-            <p class="routing-card-description">
-              For runners, cyclists, and triathletes
-            </p>
-            <a href="/train" class="routing-card-link">View Products</a>
+    <section class="world-grid" id="explore">
+      <div class="world-grid-container">
+        <!-- Wearables - Large left cell spanning 2 rows -->
+        <a href="./wearables.html" class="world-cell">
+          <img
+            src="./assets/images/world-grid/wearables.png"
+            alt="Wearables"
+            class="world-cell-image"
+            loading="lazy"
+          />
+          <div class="world-cell-content">
+            <h3 class="world-cell-category">Wearables</h3>
+            <span class="world-cell-cta">
+              Explore
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </span>
           </div>
+        </a>
 
-          <!-- EXPLORE Card -->
-          <div class="routing-card scroll-reveal">
-            <svg
-              class="routing-card-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              aria-hidden="true"
-            >
-              <polygon
-                points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
-              ></polygon>
-            </svg>
-            <h3 class="routing-card-title">EXPLORE</h3>
-            <p class="routing-card-description">
-              For hiking, trekking, and outdoor adventure
-            </p>
-            <a href="/explore" class="routing-card-link">View Products</a>
+        <!-- Sports & Fitness -->
+        <a href="./sports.html" class="world-cell">
+          <img
+            src="./assets/images/world-grid/sports.png"
+            alt="Sports & Fitness"
+            class="world-cell-image"
+            loading="lazy"
+          />
+          <div class="world-cell-content">
+            <h3 class="world-cell-category">Sports & Fitness</h3>
+            <span class="world-cell-cta">
+              Explore
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </span>
           </div>
+        </a>
 
-          <!-- NAVIGATE Card -->
-          <div class="routing-card scroll-reveal">
-            <svg
-              class="routing-card-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              aria-hidden="true"
-            >
-              <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
-            </svg>
-            <h3 class="routing-card-title">NAVIGATE</h3>
-            <p class="routing-card-description">
-              For pilots, marine, and automotive
-            </p>
-            <a href="/navigate" class="routing-card-link">View Products</a>
+        <!-- Outdoor Recreation -->
+        <a href="./outdoor.html" class="world-cell">
+          <img
+            src="./assets/images/world-grid/outdoor.png"
+            alt="Outdoor Recreation"
+            class="world-cell-image"
+            loading="lazy"
+          />
+          <div class="world-cell-content">
+            <h3 class="world-cell-category">Outdoor</h3>
+            <span class="world-cell-cta">
+              Explore
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </span>
           </div>
+        </a>
 
-          <!-- LIVE WELL Card -->
-          <div class="routing-card scroll-reveal">
-            <svg
-              class="routing-card-icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              aria-hidden="true"
-            >
-              <path
-                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-              ></path>
-            </svg>
-            <h3 class="routing-card-title">LIVE WELL</h3>
-            <p class="routing-card-description">
-              For health, lifestyle, and daily wellness
-            </p>
-            <a href="/wellness" class="routing-card-link">View Products</a>
+        <!-- Aviation -->
+        <a href="./aviation.html" class="world-cell">
+          <img
+            src="./assets/images/world-grid/aviation.png"
+            alt="Aviation"
+            class="world-cell-image"
+            loading="lazy"
+          />
+          <div class="world-cell-content">
+            <h3 class="world-cell-category">Aviation</h3>
+            <span class="world-cell-cta">
+              Explore
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </span>
           </div>
+        </a>
+
+        <!-- Automotive -->
+        <a href="./automotive.html" class="world-cell">
+          <img
+            src="./assets/images/world-grid/automotive.png"
+            alt="Automotive"
+            class="world-cell-image"
+            loading="lazy"
+          />
+          <div class="world-cell-content">
+            <h3 class="world-cell-category">Automotive</h3>
+            <span class="world-cell-cta">
+              Explore
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Marine -->
+        <a href="./marine.html" class="world-cell">
+          <img
+            src="./assets/images/world-grid/marine.png"
+            alt="Marine"
+            class="world-cell-image"
+            loading="lazy"
+          />
+          <div class="world-cell-content">
+            <h3 class="world-cell-category">Marine</h3>
+            <span class="world-cell-cta">
+              Explore
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================
+       ACT 4: FEATURED PRODUCTS - LIFESTYLE SHOWCASE
+       Good Life Med inspired: bg image + floating cards
+       ============================================ -->
+    <section class="featured-products" id="products">
+      <!-- Full-width lifestyle background -->
+      <div class="featured-bg">
+        <img
+          src="./assets/images/featured-bg.png"
+          alt=""
+          loading="lazy"
+          aria-hidden="true"
+        />
+      </div>
+
+      <!-- Content Layer -->
+      <div class="featured-content">
+        <!-- Left side header -->
+        <div class="featured-header">
+          <span class="featured-eyebrow">01 · Featured Collection</span>
+          <h2 class="featured-title">Award-Winning Wearables</h2>
+          <p class="featured-description">
+            Discover the power of precision GPS and advanced health monitoring
+            to support your performance journey.
+          </p>
+        </div>
+
+        <!-- Products grid - 4 columns -->
+        <div class="products-grid">
+          <!-- Fēnix 8 -->
+          <article class="product-card scroll-reveal">
+            <div class="product-image-wrapper">
+              <img
+                src="./assets/images/products/fenix-8.png"
+                alt="Garmin Fēnix 8"
+                class="product-image"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="product-name">Fēnix 8</h3>
+            <p class="product-tagline">Ultimate Adventure Watch</p>
+            <div class="product-cta-row">
+              <button class="product-cta-primary add-to-cart-btn" data-name="Fēnix 8" data-price="699.99" data-image="./assets/images/products/fenix-8.png">Get Started</button>
+              <a href="./products/fenix-8.html" class="product-cta">Learn more</a>
+            </div>
+          </article>
+
+          <!-- Forerunner 965 -->
+          <article class="product-card scroll-reveal">
+            <div class="product-image-wrapper">
+              <img
+                src="./assets/images/products/forerunner-965.png"
+                alt="Garmin Forerunner 965"
+                class="product-image"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="product-name">Forerunner 965</h3>
+            <p class="product-tagline">Premium Running Watch</p>
+            <div class="product-cta-row">
+              <button class="product-cta-primary add-to-cart-btn" data-name="Forerunner 965" data-price="549.99" data-image="./assets/images/products/forerunner-965.png">Get Started</button>
+              <a href="./products/forerunner-965.html" class="product-cta">Learn more</a>
+            </div>
+          </article>
+
+          <!-- Venu 3 -->
+          <article class="product-card scroll-reveal">
+            <div class="product-image-wrapper">
+              <img
+                src="./assets/images/products/venu-3.png"
+                alt="Garmin Venu 3"
+                class="product-image"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="product-name">Venu 3</h3>
+            <p class="product-tagline">Lifestyle Smartwatch</p>
+            <div class="product-cta-row">
+              <button class="product-cta-primary add-to-cart-btn" data-name="Venu 3" data-price="399.99" data-image="./assets/images/products/venu-3.png">Get Started</button>
+              <a href="./products/venu-3.html" class="product-cta">Learn more</a>
+            </div>
+          </article>
+
+          <!-- Edge 1050 -->
+          <article class="product-card scroll-reveal">
+            <div class="product-image-wrapper">
+              <img
+                src="./assets/images/products/edge-1050.png"
+                alt="Garmin Edge 1050"
+                class="product-image"
+                loading="lazy"
+              />
+            </div>
+            <h3 class="product-name">Edge 1050</h3>
+            <p class="product-tagline">Ultimate Cycling Computer</p>
+            <div class="product-cta-row">
+              <button class="product-cta-primary add-to-cart-btn" data-name="Edge 1050" data-price="499.99" data-image="./assets/images/products/edge-1050.png">Get Started</button>
+              <a href="./products/edge-1050.html" class="product-cta">Learn more</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- ============================================
-       SECTION 3: CREDIBILITY STRIP
+       ACT 5: CREDIBILITY - INSTRUMENT PANEL
+       Mission control readouts, not infographics
        ============================================ -->
     <section class="credibility section" id="credibility">
       <div class="container">
-        <h2 class="credibility-title">Trusted by Champions Worldwide</h2>
-
         <div class="stats-grid">
           <div class="stat-item scroll-reveal">
             <div class="stat-number">35+</div>
@@ -496,130 +984,199 @@
           </div>
 
           <div class="stat-item scroll-reveal">
-            <div class="stat-number">90 Days</div>
-            <div class="stat-label">Battery Life</div>
+            <div class="stat-number">90</div>
+            <div class="stat-label">Days Battery Life</div>
           </div>
 
           <div class="stat-item scroll-reveal">
             <div class="stat-number">300M+</div>
-            <div class="stat-label">Devices Sold</div>
+            <div class="stat-label">Devices Worldwide</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================
-       SECTION 4: FEATURED PRODUCTS
+       ACT 5.5: OFF-ROAD PRODUCTS - ADVENTURE SHOWCASE
+       Same structure as wearables - lifestyle bg + cards
        ============================================ -->
-    <section class="featured-products section" id="products">
-      <div class="container">
-        <h2 class="featured-title">Award-Winning Wearables</h2>
+    <section class="featured-products offroad-section" id="offroad">
+      <!-- Full-width lifestyle background -->
+      <div class="featured-bg">
+        <img
+          src="./assets/images/offroad-bg.png"
+          alt=""
+          loading="lazy"
+          aria-hidden="true"
+        />
+      </div>
 
+      <!-- Content Layer -->
+      <div class="featured-content">
+        <!-- Left side header -->
+        <div class="featured-header">
+          <span class="featured-eyebrow">02 · Off-Road Collection</span>
+          <h2 class="featured-title">Conquer Every Trail</h2>
+          <p class="featured-description">
+            Navigate the uncharted with rugged GPS navigators and trackers built
+            for the most demanding off-road adventures.
+          </p>
+        </div>
+
+        <!-- Products grid - 4 columns -->
         <div class="products-grid">
-          <!-- Fēnix 8 -->
-          <div class="product-card scroll-reveal">
+          <!-- Tread XL -->
+          <article class="product-card scroll-reveal">
             <div class="product-image-wrapper">
               <img
-                src="./assets/images/products/fenix-8.png"
-                alt="Garmin Fēnix 8 Ultimate Adventure Watch"
+                src="./assets/images/products/tread-xl.png"
+                alt="Garmin Tread XL - Overland Edition"
                 class="product-image"
-              />
-              <img
-                src="./assets/images/products/fenix-8-lifestyle.jpg"
-                alt="Fēnix 8 lifestyle shot"
-                class="product-image-hover"
+                loading="lazy"
               />
             </div>
-            <h3 class="product-name">Fēnix 8</h3>
-            <p class="product-tagline">Ultimate Adventure Watch</p>
-            <p class="product-price">₹95,990</p>
-            <a href="/products/fenix-8" class="product-cta">Learn More</a>
-          </div>
+            <h3 class="product-name">Tread® XL</h3>
+            <p class="product-tagline">10" All-Terrain Navigator</p>
+            <div class="product-cta-row">
+              <button class="product-cta-primary add-to-cart-btn" data-name="Tread XL" data-price="1199.99" data-image="./assets/images/products/tread-xl.png">Get Started</button>
+              <a href="./products/tread-xl.html" class="product-cta">Learn more</a>
+            </div>
+          </article>
 
-          <!-- Forerunner 965 -->
-          <div class="product-card scroll-reveal">
+          <!-- Tread 2 -->
+          <article class="product-card scroll-reveal">
             <div class="product-image-wrapper">
               <img
-                src="./assets/images/products/forerunner-965.png"
-                alt="Garmin Forerunner 965 Premium Running Watch"
+                src="./assets/images/products/tread-2.png"
+                alt="Garmin Tread 2 - Overland Edition"
                 class="product-image"
-              />
-              <img
-                src="./assets/images/products/forerunner-965-lifestyle.jpg"
-                alt="Forerunner 965 lifestyle shot"
-                class="product-image-hover"
+                loading="lazy"
               />
             </div>
-            <h3 class="product-name">Forerunner 965</h3>
-            <p class="product-tagline">Premium Running Watch</p>
-            <p class="product-price">₹62,990</p>
-            <a href="/products/forerunner-965" class="product-cta"
-              >Learn More</a
-            >
-          </div>
+            <h3 class="product-name">Tread® 2</h3>
+            <p class="product-tagline">8" All-Terrain Navigator</p>
+            <div class="product-cta-row">
+              <button class="product-cta-primary add-to-cart-btn" data-name="Tread 2" data-price="899.99" data-image="./assets/images/products/tread-2.png">Get Started</button>
+              <a href="./products/tread-2.html" class="product-cta">Learn more</a>
+            </div>
+          </article>
 
-          <!-- Venu 3 -->
-          <div class="product-card scroll-reveal">
+          <!-- Overlander -->
+          <article class="product-card scroll-reveal">
             <div class="product-image-wrapper">
               <img
-                src="./assets/images/products/venu-3.png"
-                alt="Garmin Venu 3 Lifestyle Smartwatch"
+                src="./assets/images/products/overlander.png"
+                alt="Garmin Overlander"
                 class="product-image"
-              />
-              <img
-                src="./assets/images/products/venu-3-lifestyle.jpg"
-                alt="Venu 3 lifestyle shot"
-                class="product-image-hover"
+                loading="lazy"
               />
             </div>
-            <h3 class="product-name">Venu 3</h3>
-            <p class="product-tagline">Lifestyle Smartwatch</p>
-            <p class="product-price">₹48,990</p>
-            <a href="/products/venu-3" class="product-cta">Learn More</a>
-          </div>
+            <h3 class="product-name">Overlander®</h3>
+            <p class="product-tagline">Rugged GPS Navigator</p>
+            <div class="product-cta-row">
+              <button class="product-cta-primary add-to-cart-btn" data-name="Overlander" data-price="749.99" data-image="./assets/images/products/overlander.png">Get Started</button>
+              <a href="./products/overlander.html" class="product-cta">Learn more</a>
+            </div>
+          </article>
 
-          <!-- Edge 1050 -->
-          <div class="product-card scroll-reveal">
+          <!-- Montana 700 -->
+          <article class="product-card scroll-reveal">
             <div class="product-image-wrapper">
               <img
-                src="./assets/images/products/edge-1050.png"
-                alt="Garmin Edge 1050 Advanced Cycling Computer"
+                src="./assets/images/products/montana-700.png"
+                alt="Garmin Montana 700"
                 class="product-image"
-              />
-              <img
-                src="./assets/images/products/edge-1050-lifestyle.jpg"
-                alt="Edge 1050 lifestyle shot"
-                class="product-image-hover"
+                loading="lazy"
               />
             </div>
-            <h3 class="product-name">Edge 1050</h3>
-            <p class="product-tagline">Advanced Cycling Computer</p>
-            <p class="product-price">₹72,990</p>
-            <a href="/products/edge-1050" class="product-cta">Learn More</a>
-          </div>
+            <h3 class="product-name">Montana® 700</h3>
+            <p class="product-tagline">Handheld GPS Navigator</p>
+            <div class="product-cta-row">
+              <button class="product-cta-primary add-to-cart-btn" data-name="Montana 700" data-price="449.99" data-image="./assets/images/products/montana-700.png">Get Started</button>
+              <a href="./products/montana-700.html" class="product-cta">Learn more</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- ============================================
-       SECTION 5: INDIA TRUST STRIP
+       ACT 6: COMMUNITY - LIFESTYLE BELONGING
+       "You'll Never Ride Alone" Bento Grid
        ============================================ -->
-    <section class="trust-strip">
-      <div class="container">
-        <div class="trust-items">
-          <span class="trust-item">Authorized Garmin India</span>
-          <span class="trust-separator">|</span>
-          <span class="trust-item">2-Year Warranty</span>
-          <span class="trust-separator">|</span>
-          <span class="trust-item">Service Centers Across India</span>
-          <span class="trust-separator">|</span>
-          <span class="trust-item">EMI Available</span>
+    <section class="community section" id="community">
+      <div class="community-header">
+        <h2 class="community-title">You'll Never Train Alone</h2>
+        <p class="community-subtitle">
+          Join millions of athletes, adventurers, and professionals who trust
+          Garmin to push their limits.
+        </p>
+      </div>
+
+      <div class="community-grid">
+        <!-- Bento grid with varied image sizes -->
+        <div class="community-cell">
+          <img
+            src="./assets/images/world-grid/wearables.png"
+            alt="Runner with GPS watch"
+            loading="lazy"
+          />
+        </div>
+        <div class="community-cell">
+          <img
+            src="./assets/images/world-grid/sports.png"
+            alt="Cyclist on mountain road"
+            loading="lazy"
+          />
+        </div>
+        <div class="community-cell">
+          <img
+            src="./assets/images/world-grid/outdoor.png"
+            alt="Hikers on mountain trail"
+            loading="lazy"
+          />
+        </div>
+        <div class="community-cell">
+          <img
+            src="./assets/images/world-grid/marine.png"
+            alt="Boating at sunset"
+            loading="lazy"
+          />
+        </div>
+        <div class="community-cell">
+          <img
+            src="./assets/images/world-grid/automotive.png"
+            alt="Driver with GPS navigation"
+            loading="lazy"
+          />
+        </div>
+        <div class="community-cell">
+          <img
+            src="./assets/images/world-grid/aviation.png"
+            alt="Pilot in cockpit"
+            loading="lazy"
+          />
+        </div>
+        <div class="community-cell">
+          <img
+            src="./assets/images/products/fenix-8-lifestyle.jpg"
+            alt="Athlete checking watch"
+            loading="lazy"
+          />
+        </div>
+        <div class="community-cell">
+          <img
+            src="./assets/images/products/forerunner-965-lifestyle.jpg"
+            alt="Runner in training"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
 
     <!-- ============================================
-       FOOTER
+       ACT 7: FOOTER - CLOSING CREDITS
+       Calm, spacious, atmospheric. Closer to ACT 6 than legal document.
        ============================================ -->
     <footer class="footer" id="footer" role="contentinfo">
       <div class="footer-container">
@@ -629,14 +1186,12 @@
           <div class="footer-column">
             <h3>Products</h3>
             <ul class="footer-links">
-              <li><a href="/smartwatches">Smartwatches</a></li>
-              <li><a href="/fitness-watches">Fitness Watches</a></li>
-              <li><a href="/running">GPS Running Watches</a></li>
-              <li><a href="/cycling">Cycling Computers</a></li>
-              <li><a href="/golf">Golf Devices</a></li>
-              <li><a href="/marine">Marine</a></li>
-              <li><a href="/aviation">Aviation</a></li>
-              <li><a href="/automotive">Automotive</a></li>
+              <li><a href="./wearables.html">Wearables</a></li>
+              <li><a href="./sports.html">Sports & Fitness</a></li>
+              <li><a href="./outdoor.html">Outdoor</a></li>
+              <li><a href="./automotive.html">Automotive</a></li>
+              <li><a href="./marine.html">Marine</a></li>
+              <li><a href="./aviation.html">Aviation</a></li>
             </ul>
           </div>
 
@@ -644,15 +1199,10 @@
           <div class="footer-column">
             <h3>Support</h3>
             <ul class="footer-links">
-              <li><a href="/support">Support Center</a></li>
-              <li><a href="/support/warranty">Warranty Information</a></li>
-              <li>
-                <a href="/support/service-centers">Service Centers (India)</a>
-              </li>
-              <li><a href="/support/software">Software Updates</a></li>
-              <li><a href="/support/manuals">Product Manuals</a></li>
-              <li><a href="/support/contact">Contact Us</a></li>
-              <li><a href="/support/faqs">FAQs</a></li>
+              <li><a href="./support/index.html">Support Center</a></li>
+              <li><a href="./support/service-centers.html">Service Centers</a></li>
+              <li><a href="./support/warranty.html">Warranty</a></li>
+              <li><a href="./support/contact.html">Contact</a></li>
             </ul>
           </div>
 
@@ -660,13 +1210,10 @@
           <div class="footer-column">
             <h3>Company</h3>
             <ul class="footer-links">
-              <li><a href="/about">About Garmin</a></li>
-              <li><a href="/careers">Careers</a></li>
-              <li><a href="/press">Press Room</a></li>
-              <li><a href="/blog">Garmin Blog</a></li>
-              <li><a href="/sustainability">Sustainability</a></li>
-              <li><a href="/partnerships">Partnerships</a></li>
-              <li><a href="/events">Events & Sponsorships</a></li>
+              <li><a href="./about.html">About Garmin</a></li>
+              <li><a href="./careers.html">Careers</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./sustainability.html">Sustainability</a></li>
             </ul>
           </div>
 
@@ -693,6 +1240,57 @@
               </form>
             </div>
           </div>
+        </div>
+
+        <!-- Trust Badges - Integrated from trust strip -->
+        <div class="footer-trust">
+          <span class="footer-trust-badge">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M9 12l2 2 4-4" />
+              <circle cx="12" cy="12" r="10" />
+            </svg>
+            Authorized Garmin India
+          </span>
+          <span class="footer-trust-badge">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            2-Year Warranty
+          </span>
+          <span class="footer-trust-badge">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Service Centers Across India
+          </span>
+          <span class="footer-trust-badge">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+              <line x1="1" y1="10" x2="23" y2="10" />
+            </svg>
+            EMI Available
+          </span>
         </div>
 
         <!-- Footer Middle - Social Links & Country -->
@@ -777,16 +1375,72 @@
             © 2026 Garmin Ltd. or its subsidiaries. All rights reserved.
           </p>
           <ul class="footer-legal">
-            <li><a href="/privacy">Privacy Policy</a></li>
-            <li><a href="/terms">Terms of Use</a></li>
-            <li><a href="/cookies">Cookie Policy</a></li>
-            <li><a href="/accessibility">Accessibility</a></li>
+            <li><a href="./privacy.html">Privacy Policy</a></li>
+            <li><a href="./terms.html">Terms of Use</a></li>
+            <li><a href="./cookies.html">Cookie Policy</a></li>
+            <li><a href="./accessibility.html">Accessibility</a></li>
           </ul>
         </div>
       </div>
     </footer>
 
+    <!-- Login Modal (hidden by default) -->
+    <div id="loginModal" class="login-modal hidden" role="dialog" aria-modal="true" aria-label="Login">
+      <div class="login-backdrop" data-close></div>
+      <div class="login-container">
+        <div class="login-left">
+          <div class="promo-logo-placeholder" aria-hidden="true">GARMIN</div>
+          <div class="discount-badge">10%<span>OFF</span></div>
+          <div class="watch-graphic" aria-hidden="true"></div>
+        </div>
+        <div class="login-right">
+          <button class="login-close" id="loginClose" aria-label="Close">✕</button>
+          <h2 class="login-title">Login</h2>
+          <form id="otpForm" class="login-form">
+            <label for="country" class="sr-only">Country code</label>
+            <div class="phone-row">
+              <div class="country-select">
+                <button type="button" class="country-btn" aria-haspopup="listbox">
+                  <span class="flag">🇮🇳</span>
+                  <span class="code">+91</span>
+                  <svg class="chev" viewBox="0 0 10 6" width="10" height="6"><path d="M0 0 L5 6 L10 0" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+                </button>
+                <!-- Simple list (non-functional placeholder) -->
+                <ul class="country-list" role="listbox" aria-hidden="true">
+                  <li data-code="+91">🇮🇳 +91</li>
+                </ul>
+              </div>
+              <input id="mobile" name="mobile" type="tel" placeholder="Mobile Number" required inputmode="tel" />
+            </div>
+            <button type="submit" class="btn btn-otp">GET OTP</button>
+            <p class="login-legal">This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
+          </form>
+            <!-- OTP Verification View (hidden until GET OTP) -->
+            <div id="otpView" class="otp-view hidden" aria-hidden="true">
+              <button class="login-back-to-edit" id="editNumber" type="button">Edit</button>
+              <h3 class="otp-title">Verify Your Number</h3>
+              <p class="otp-sub">We sent an OTP to <span id="displayNumber">+91 XXXXX XXXXX</span></p>
+              <div class="otp-grid" role="group" aria-label="Enter verification code">
+                <input inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-input" aria-label="Digit 1" />
+                <input inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-input" aria-label="Digit 2" />
+                <input inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-input" aria-label="Digit 3" />
+                <input inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-input" aria-label="Digit 4" />
+              </div>
+              <div class="otp-actions" style="display:flex;align-items:center;gap:12px;margin-top:12px;">
+                <button id="resendBtn" class="btn btn-otp" disabled>Resend OTP</button>
+                <div class="resend-timer" aria-live="polite">Resend in <span id="resendTimer">00:30</span></div>
+              </div>
+              <button id="verifyBtn" class="btn verify-btn" style="margin-top:14px;background:#D9A54C;color:#08100a;padding:12px;border-radius:10px;border:none;font-weight:700;">VERIFY &amp; PROCEED</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
     <!-- JavaScript -->
+    <script src="./scripts/login-modal.js" defer></script>
+    <script src="./scripts/overlays.js" defer></script>
+    <script src="./scripts/cart-logic.js" defer></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
+
